@@ -1,20 +1,9 @@
 const express = require("express")
-
+const path = require("path")
 const router = express.Router()
 
 router.get("/", (request, response) => {
-    response.sendfile(__dirname + "public/aboutme.html")
+    response.sendFile(path.join(__dirname, "../public/html/aboutme.html"))
 })
-
-
-
-
-
-
-
-
-
-
-
 
 module.exports = router
