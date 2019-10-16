@@ -1,0 +1,23 @@
+{
+  "name": "alexander-vellios-portfolio",
+  "version": "1.0.0",
+  "description": "My professional portfolio containing an about me section and a compilation of all my latest projects and mini-projects.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheGreekCuban/Alexander-Vellios-Portfolio.git"
+  },
+  "author": "Alexander Vellios",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheGreekCuban/Alexander-Vellios-Portfolio/issues"
+  },
+  "homepage": "https://github.com/TheGreekCuban/Alexander-Vellios-Portfolio#readme",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1"
+  }
+}
