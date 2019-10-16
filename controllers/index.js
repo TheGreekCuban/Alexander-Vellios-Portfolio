@@ -3,7 +3,7 @@ const express = require("express")
 const router = express.Router()
 
 router.get("/", (request, response) => {
-    response.sendfile(__dirname + "views/aboutme.html")
+    response.sendfile(__dirname + "public/aboutme.html")
 })
 
 
