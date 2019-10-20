@@ -1,0 +1,30 @@
+#myPhoto {
+    float: left;
+    padding: 0 20px 4px 0;
+}
+
+.container {
+    margin-top: 10%;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    #myName {
+        font-size: 24px;
+    }
+
+    .container {
+        margin: 0 auto;
+        padding-top: 10%;
+    }
+
+    #myPhoto {
+        padding: 5px 10px;
+    }
+    .aboutMeHeader {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+}
