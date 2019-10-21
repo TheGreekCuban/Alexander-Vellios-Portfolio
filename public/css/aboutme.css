@@ -1,6 +1,14 @@
-#myPhoto {
-    float: left;
-    padding: 0 20px 4px 0;
+/* Can All Be Reused */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+}
+
+main {
+    flex: 1 0 auto;
 }
 
 .container {
@@ -8,24 +16,37 @@
     margin-bottom: 2%;
 }
 
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
+#navContainer {
+    margin: 0 15% 0 15%;
+    font-family: 'Cinzel', serif;
+}
 
-main {
-flex: 1 0 auto;
+nav {
+    background-color: #107C10;
+    color: #3A3A3A;
+    border-bottom: 3px solid #3A3A3A;
 }
 
 #footer {
     text-align: center;
+    padding: 0;
+    font-family: 'Cinzel', serif;
+    background-color: #107C10;
+    color: #3A3A3A;
+    border-top: 3px solid #3A3A3A;
 }
 
-#navContainer {
-    margin-left: 15%;
-    margin-right: 15%;
+.links {
+    line-height: 20px;
+    padding-top: 10px;
 }
+/* ============================================================= */
+  
+#myPhoto {
+    float: left;
+    padding: 0 20px 4px 0;
+}
+
 
 /* iPhones Screens Other Than 6/7/8 */
 @media screen and (max-width: 390px) {
@@ -34,14 +55,33 @@ flex: 1 0 auto;
         margin: 0;
     }
 
+    .links {
+        line-height: 25px;
+    }
+
     #myName {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .container {
         margin: 0 auto;
-        padding-top: 10%;
     }
+
+    p {
+        font-size: 18px;
+    }
+
+    .links {
+        line-height: 25px;
+        font-size: 14px;
+    }
+
+    #copyright {
+        font-size: 14px;
+        padding-bottom: 8px;
+    }
+
+/* ============================================================= */
 
     #myPhoto {
         margin-bottom: 5%;
@@ -51,10 +91,6 @@ flex: 1 0 auto;
         padding: 0;
         margin: 0;
         text-align: center;
-    }
-
-    p {
-        font-size: 18px;
     }
 }
 
@@ -66,13 +102,28 @@ flex: 1 0 auto;
     }
 
     #myName {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .container {
         margin: 0 auto;
-        padding-top: 5%;
     }
+
+    .links {
+        line-height: 25px;
+        font-size: 14px;
+    }
+
+    #copyright {
+        font-size: 14px;
+        padding-bottom: 8px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+/* ============================================================= */
 
     #myPhoto {
         padding: 5px 30px 5px 30px;
@@ -81,9 +132,5 @@ flex: 1 0 auto;
         text-align: center;
         padding: 0;
         margin: 0;
-    }
-
-    p {
-        font-size: 18px;
     }
 }
