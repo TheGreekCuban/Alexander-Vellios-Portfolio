@@ -17,7 +17,7 @@ main {
 }
 
 #navContainer {
-    margin: 0 15% 0 15%;
+    margin: 0 5% 0 5%;
     font-family: 'Cinzel', serif;
 }
 
@@ -29,7 +29,7 @@ nav {
 
 #footer {
     text-align: center;
-    padding: 0;
+    padding: 10px;
     font-family: 'Cinzel', serif;
     background-color: #107C10;
     color: #3A3A3A;
@@ -41,6 +41,77 @@ nav {
     padding-top: 10px;
 }
 /* ============================================================= */
+
+.homeWrapper {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#myName {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    text-align: center;
+    color: #3A3A3A;
+    font-size: 48px;
+    font-family: 'Cinzel', serif;
+    text-shadow: 3px 3px 10px #107C10;
+}
+
+#jobDescription {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    text-align: center;
+    color: #3a3a3a;
+    font-size: 24px;
+    font-family: 'Cinzel', serif;
+    text-shadow: 3px 3px 10px #107C10;
+}
+
+.fa-linkedin {
+    font-size: 3em;
+    color: #107C10;
+    background-color: white;
+    text-shadow: 1px 1px #3A3A3A;
+}
+
+.linkedIn {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    text-align: center;
+}
+
+.fa-github {
+    font-size: 3em;
+    color: #107C10;
+    background-color: white;
+    text-shadow: 1px 1px #3A3A3A;
+}
+
+.gitHub {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    text-align: center;
+}
+
+
+.fa-file-invoice-dollar {
+    font-size: 3em;
+    color: #107C10;
+    background-color: white;
+    text-shadow: 1px 1px #3A3A3A;
+}
+
+.resume {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    text-align: center;
+}
 
 /* iPhones Screens Other Than 6/7/8 */
 @media screen and (max-width: 390px) {
@@ -76,6 +147,50 @@ nav {
     }
 
 /* ============================================================= */
+
+.fa-linkedin {
+    font-size: 1.5em;
+    color: #107C10;
+    background-color: white;
+    text-shadow: 1px 1px #3A3A3A;
+}
+
+.linkedIn {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    text-align: center;
+}
+
+.fa-github {
+    font-size: 1.5em;
+    color: #107C10;
+    background-color: white;
+    text-shadow: 1px 1px #3A3A3A;
+}
+
+.gitHub {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    text-align: center;
+}
+
+
+.fa-file-invoice-dollar {
+    font-size: 1.5em;
+    color: #107C10;
+    background-color: white;
+    text-shadow: 1px 1px #3A3A3A;
+}
+
+.resume {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    text-align: center;
+}
+
 }
 
 /* iPhones Screens 6/7/8 */
