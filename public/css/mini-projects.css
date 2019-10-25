@@ -1,19 +1,19 @@
 /* Can All Be Reused */
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
+body, html {
+    height: 100%;
 }
 
-main {
-    flex: 1 0 auto;
+body {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    height: 100%;
+    margin: 0;
 }
 
 .container {
     margin-top: 2%;
     margin-bottom: 2%;
+    display: grid;
 }
 
 #navContainer {
