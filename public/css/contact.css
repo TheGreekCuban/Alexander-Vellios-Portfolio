@@ -3,6 +3,10 @@ body, html {
     height: 100%;
 }
 
+#contactUs {
+    display: none;
+}
+
 body {
     font-family: 'Cormorant Garamond', serif;
     font-size: 18px;
@@ -96,13 +100,13 @@ nav {
         display: none;
     }
 
+    #contactUs {
+        display: block;
+        font-size: 1.5em;
+    }
+
     .banner {
-        display: flex;
-        min-height: 60%;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        margin-top: -15%;
+        display: none;
     }
 
     .info {
@@ -133,14 +137,15 @@ nav {
         display: none;
     }
 
-    .banner {
-        display: flex;
-        min-height: 60%;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
+    #contactUs {
+        display: block;
+        font-size: 1.5em;
     }
 
+    .banner {
+        display: none;
+    }
+    
     .info {
         font-size: .85em;
     }
@@ -175,9 +180,6 @@ nav {
         padding: 10%;
     }
     .banner {
-        display: flex;
-        min-height: 60%;
-        flex-direction: column;
-        justify-content: center;
+        display: none
     }
 }
