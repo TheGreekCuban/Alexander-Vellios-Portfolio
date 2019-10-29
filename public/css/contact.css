@@ -139,7 +139,6 @@ nav {
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        margin-top: -10%
     }
 
     .info {
@@ -176,8 +175,8 @@ nav {
         padding: 10%;
     }
     .banner {
-        margin-top: -15%;
         display: flex;
+        min-height: 60%;
         flex-direction: column;
         justify-content: center;
     }
