@@ -127,7 +127,7 @@ nav {
     }
 
     #footer {
-        margin: 0;
+        margin: auto 0 0 0;
     }
 
     #navContainer {
@@ -140,7 +140,7 @@ nav {
 
     #myName {
         font-size: 2em;
-        margin: 5% 0 0 0;
+        margin: 25% 0 0 0;
     }
 
     #jobDescription {
@@ -217,7 +217,7 @@ nav {
     }
 
     #footer {
-        margin: 0;
+        margin: auto 0 0 0;
     }
 
     #navContainer {
@@ -230,7 +230,7 @@ nav {
 
     #myName {
         font-size: 2em;
-        margin: 5% 0 0 0;
+        margin: 25% 0 0 0;
     }
 
     #jobDescription {
