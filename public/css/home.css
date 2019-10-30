@@ -172,6 +172,11 @@ nav {
         font-size: 1em;
     }
 
+    #appDescription {
+        font-size: .75em;
+        margin-top: 5%;
+    }
+
     .container {
         margin: 0 auto;
     }
@@ -229,6 +234,11 @@ nav {
         flex-direction: column;
         font-family: 'Cormorant Garamond', serif;
         font-size: 18px;
+    }
+
+    #appDescription {
+        font-size: .75em;
+        margin-top: 5%;
     }
 
     #footer {
@@ -316,6 +326,11 @@ nav {
     #navContainer {
         margin: 0 5% 0 5%;
         font-family: 'Cinzel', serif;
+    }
+
+    #appDescription {
+        font-size: .75em;
+        margin-top: 5%;
     }
     
     nav {
