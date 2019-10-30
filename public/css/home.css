@@ -7,6 +7,7 @@ body {
     font-family: 'Cormorant Garamond', serif;
     font-size: 18px;
     height: 100%;
+    background-color: #3A3A3A;
 }
 
 .container {
@@ -55,10 +56,10 @@ nav {
     grid-column-end: 6;
     grid-row-start: 3;
     text-align: center;
-    color: #3A3A3A;
+    color: white;
     font-size: 48px;
     font-family: 'Cinzel', serif;
-    text-shadow: 3px 3px 10px #107C10;
+    text-shadow: 3px 3px 40px #107C10;
 }
 
 #jobDescription {
@@ -66,7 +67,19 @@ nav {
     grid-column-end: 6;
     grid-row-start: 4;
     text-align: center;
-    color: #3a3a3a;
+    color:white;
+    font-size: 24px;
+    font-family: 'Cinzel', serif;
+    text-shadow: 3px 3px 10px #107C10;
+    vertical-align: middle;
+}
+
+#appDescription {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    text-align: center;
+    color:white;
     font-size: 24px;
     font-family: 'Cinzel', serif;
     text-shadow: 3px 3px 10px #107C10;
@@ -74,8 +87,12 @@ nav {
 
 .fa-linkedin {
     color: #107C10;
-    background-color: white;
-    text-shadow: 1px 1px #3A3A3A;
+    background-color: #3A3A3A;
+    text-shadow: 1px 1px 2px white;
+}
+
+.fa-linkedin:hover {
+    text-shadow: #107C10 1px 1px 50px;
 }
 
 .linkedIn {
@@ -88,8 +105,12 @@ nav {
 
 .fa-github {
     color: #107C10;
-    background-color: white;
-    text-shadow: 1px 1px #3A3A3A;
+    background-color: #3A3A3A;
+    text-shadow: 1px 1px 2px white;
+}
+
+.fa-github:hover {
+    text-shadow: #107C10 1px 1px 50px;
 }
 
 .gitHub {
@@ -103,8 +124,12 @@ nav {
 
 .fa-file-invoice-dollar {
     color: #107C10;
-    background-color: white;
-    text-shadow: 1px 1px #3A3A3A;
+    background-color: #3A3A3A;
+    text-shadow: 1px 1px 2px white;
+}
+
+.fa-file-invoice-dollar:hover {
+    text-shadow: #107C10 1px 1px 50px;
 }
 
 .resume {
@@ -169,9 +194,6 @@ nav {
 
     .fa-linkedin {
         font-size: 1.5em;
-        color: #107C10;
-        background-color: white;
-        text-shadow: 1px 1px #3A3A3A;
     }
 
     .linkedIn {
@@ -181,9 +203,6 @@ nav {
 
     .fa-github {
         font-size: 1.5em;
-        color: #107C10;
-        background-color: white;
-        text-shadow: 1px 1px #3A3A3A;
     }
 
     .gitHub {
@@ -194,16 +213,12 @@ nav {
 
     .fa-file-invoice-dollar {
         font-size: 1.5em;
-        color: #107C10;
-        background-color: white;
-        text-shadow: 1px 1px #3A3A3A;
     }
 
     .resume {
         text-align: center;
         margin: 10% 0 0 0;
     }
-
 }
 
 /* iPhones Screens 6/7/8 */
@@ -259,9 +274,6 @@ nav {
 
     .fa-linkedin {
         font-size: 1.5em;
-        color: #107C10;
-        background-color: white;
-        text-shadow: 1px 1px #3A3A3A;
     }
 
     .linkedIn {
@@ -271,9 +283,6 @@ nav {
 
     .fa-github {
         font-size: 1.5em;
-        color: #107C10;
-        background-color: white;
-        text-shadow: 1px 1px #3A3A3A;
     }
 
     .gitHub {
@@ -284,9 +293,6 @@ nav {
 
     .fa-file-invoice-dollar {
         font-size: 1.5em;
-        color: #107C10;
-        background-color: white;
-        text-shadow: 1px 1px #3A3A3A;
     }
 
     .resume {
@@ -348,10 +354,8 @@ nav {
         grid-column-end: 6;
         grid-row-start: 3;
         text-align: center;
-        color: #3A3A3A;
         font-size: 48px;
         font-family: 'Cinzel', serif;
-        text-shadow: 3px 3px 10px #107C10;
     }
     
     #jobDescription {
@@ -359,16 +363,8 @@ nav {
         grid-column-end: 6;
         grid-row-start: 4;
         text-align: center;
-        color: #3a3a3a;
         font-size: 24px;
         font-family: 'Cinzel', serif;
-        text-shadow: 3px 3px 10px #107C10;
-    }
-    
-    .fa-linkedin {
-        color: #107C10;
-        background-color: white;
-        text-shadow: 1px 1px #3A3A3A;
     }
     
     .linkedIn {
@@ -379,25 +375,12 @@ nav {
         font-size: 2em;
     }
     
-    .fa-github {
-        color: #107C10;
-        background-color: white;
-        text-shadow: 1px 1px #3A3A3A;
-    }
-    
     .gitHub {
         grid-column-start: 5;
         grid-column-end: 7;
         grid-row-start: 7;
         text-align: center;
         font-size: 2em;
-    }
-    
-    
-    .fa-file-invoice-dollar {
-        color: #107C10;
-        background-color: white;
-        text-shadow: 1px 1px #3A3A3A;
     }
     
     .resume {
