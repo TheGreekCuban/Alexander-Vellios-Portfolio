@@ -26,12 +26,14 @@ body {
     grid-area: fs;
     text-align: center;
     color: white;
+    min-height: 100%;
 }
 
 #mp {
     grid-area: mp;
     text-align: center;
     color: white;
+    min-height: 100%;
 }
 
 nav {
