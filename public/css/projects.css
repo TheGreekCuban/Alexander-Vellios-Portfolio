@@ -11,8 +11,9 @@ body {
     grid-template:  "nav nav nav nav"
                     "fs fs mp mp"
                     "fs fs mp mp"
+                    "fs fs mp mp"
                     "footer footer footer footer";
-    grid-template-rows: repeat(4, minmax(auto, 1fr));
+    grid-template-rows: repeat(5, minmax(auto, 1fr));
     grid-template-columns: repeat(4, 1fr);
     background-color: #3A3A3A;
 }
@@ -26,14 +27,12 @@ body {
     grid-area: fs;
     text-align: center;
     color: white;
-    min-height: 100%;
 }
 
 #mp {
     grid-area: mp;
     text-align: center;
     color: white;
-    min-height: 100%;
 }
 
 nav {
