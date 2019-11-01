@@ -9,6 +9,7 @@ body {
     margin: 0;
     display: grid;
     grid-template:  "nav nav nav nav"
+                    "t1 t1 t2 t2"
                     "fs fs mp mp"
                     "fs fs mp mp"
                     "fs fs mp mp"
@@ -23,16 +24,30 @@ body {
     font-family: 'Cinzel', serif;
 }
 
+.title1 {
+    grid-area: t1;
+    text-align: center;
+    color: white;
+}
+
+.title2 {
+    grid-area: t2;
+    text-align: center;
+    color: white;
+}
+
 #fs {
     grid-area: fs;
     text-align: center;
     color: white;
+    margin-top: -10%;
 }
 
 #mp {
     grid-area: mp;
     text-align: center;
     color: white;
+    margin-top: -10%;
 }
 
 nav {
@@ -64,9 +79,11 @@ nav {
 
     body {
         grid-template:  "nav nav nav nav"
-        "fs fs fs fs"
-        "mp mp mp mp"
-        "footer footer footer footer";
+                        "t1 t1 t1 t1"
+                        "fs fs fs fs"
+                        "t2 t2 t2 t2"
+                        "mp mp mp mp"
+                        "footer footer footer footer";
     }
 
     h4 {
@@ -80,9 +97,11 @@ nav {
 @media screen and (min-width: 405px) and (max-width: 480px) {
     body {
         grid-template:  "nav nav nav nav"
-        "fs fs fs fs"
-        "mp mp mp mp"
-        "footer footer footer footer";
+                        "t1 t1 t1 t1"
+                        "fs fs fs fs"
+                        "t2 t2 t2 t2"
+                        "mp mp mp mp"
+                        "footer footer footer footer";
     }
 
     h4 {
@@ -95,10 +114,12 @@ nav {
 @media screen and (min-width: 490px) and (max-width: 1030px) {
 
     body {
-        grid-template:  "nav nav nav nav"
-        "fs fs fs fs"
-        "mp mp mp mp"
-        "footer footer footer footer";
+         grid-template:  "nav nav nav nav"
+                        "t1 t1 t1 t1"
+                        "fs fs fs fs"
+                        "t2 t2 t2 t2"
+                        "mp mp mp mp"
+                        "footer footer footer footer";
     }
 
     h4 {
