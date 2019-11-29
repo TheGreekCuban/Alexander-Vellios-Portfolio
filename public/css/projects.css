@@ -9,12 +9,13 @@ body {
     margin: 0;
     display: grid;
     grid-template:  "nav nav nav nav"
-                    "t1 t1 t2 t2"
-                    "fs fs mp mp"
-                    "fs fs mp mp"
-                    "fs fs mp mp"
+                    "t1 t1 t1 t1"
+                    "fs fs fs fs"
+                    "fs fs fs fs"
+                    "fs fs fs fs"
+                    "tech tech tech tech"
                     "footer footer footer footer";
-    grid-template-rows: repeat(5, minmax(auto, 1fr));
+    grid-template-rows: repeat(6, minmax(auto, 1fr));
     grid-template-columns: repeat(4, 1fr);
     background-color: #3A3A3A;
 }
@@ -28,12 +29,11 @@ body {
     grid-area: t1;
     text-align: center;
     color: white;
+    padding-bottom: 2.5em;
 }
 
-.title2 {
-    grid-area: t2;
-    text-align: center;
-    color: white;
+.indicators {
+    margin-top: -25px;
 }
 
 #fs {
@@ -42,14 +42,6 @@ body {
     color: white;
     margin-top: -10%;
 }
-
-#mp {
-    grid-area: mp;
-    text-align: center;
-    color: white;
-    margin-top: -10%;
-}
-
 nav {
     background-color: #107C10;
     color: #3A3A3A;
@@ -81,8 +73,6 @@ nav {
         grid-template:  "nav nav nav nav"
                         "t1 t1 t1 t1"
                         "fs fs fs fs"
-                        "t2 t2 t2 t2"
-                        "mp mp mp mp"
                         "footer footer footer footer";
     }
 
@@ -99,14 +89,12 @@ nav {
         grid-template:  "nav nav nav nav"
                         "t1 t1 t1 t1"
                         "fs fs fs fs"
-                        "t2 t2 t2 t2"
-                        "mp mp mp mp"
                         "footer footer footer footer";
     }
 
     h4 {
         font-size: 1.25em;
-        padding: 0;;
+        padding: 0;
     }
 }
 
@@ -117,8 +105,6 @@ nav {
          grid-template:  "nav nav nav nav"
                         "t1 t1 t1 t1"
                         "fs fs fs fs"
-                        "t2 t2 t2 t2"
-                        "mp mp mp mp"
                         "footer footer footer footer";
     }
 
