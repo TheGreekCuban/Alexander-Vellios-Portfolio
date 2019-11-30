@@ -8,4 +8,16 @@ $(document).ready(function(){
       pressed: true,
     });
 
+   
+
+
+    $("a.carousel-item").click(function(event) {
+      if($("a.carousel-item").hasClass("active")) {
+        let picId = $("img.responsive-img").attr("pic")
+        console.log("ID: ", picId)
+      }
+    })
+
+  
+
   });

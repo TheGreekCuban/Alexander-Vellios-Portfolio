@@ -32,10 +32,6 @@ body {
     padding-bottom: 2.5em;
 }
 
-.indicators {
-    margin-top: -25px;
-}
-
 #fs {
     grid-area: fs;
     text-align: center;
