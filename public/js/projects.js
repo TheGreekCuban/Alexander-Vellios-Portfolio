@@ -11,11 +11,10 @@ $(document).ready(function(){
    
 
 
-    $("a.carousel-item").click(function(event) {
-      if($("a.carousel-item").hasClass("active")) {
-        let picId = $("img.responsive-img").attr("pic")
-        console.log("ID: ", picId)
-      }
+    $(".carousel").click(function(event) {
+      console.log("hello")
+      let log = $(this).find(".active").attr("itemid")
+      console.log(log)
     })
 
   
