@@ -22,7 +22,7 @@ $(document).ready(function(){
     function changeDescriptionText(itemId, oldElementId) {
       console.log(itemId, oldElementId)
       $("#p" + oldElementId).css("display", "none")
-      $("#p" + itemId).css("display", "inline")
+      $("#p" + itemId).fadeIn(1500)
     }
 
     //This is a helper function that listens for the change in the current active element. First it saves the active element to currentActiveElement. If that variable is not = to the activeElement, the active element change function it called. Otherwise the requestAnimationTimeFrame function is continuously iterating, waiting for the change.
