@@ -120,8 +120,7 @@ nav {
 
     .gitHub {
         text-align: center;
-        margin: 10% 0 0 0;
-        grid-area: git;
+        font-size: 2.5em;
     }
 
 }
@@ -139,6 +138,11 @@ nav {
     h4 {
         font-size: 1.25em;
         padding: 0;
+    }
+
+    .gitHub {
+        text-align: center;
+        font-size: 2.5em;
     }
 
     .description {
@@ -162,7 +166,11 @@ nav {
         padding: 0;;
     }
 
-    .description,
+    .description {
+        font-size: 1.5em;
+        margin-top: -10%;
+    }
+    
     .techUsed {
         font-size: 1.5em;
     }
