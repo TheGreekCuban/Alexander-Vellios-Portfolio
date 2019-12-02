@@ -105,6 +105,10 @@ nav {
                         "footer footer footer footer";
     }
 
+    .description {
+        margin-top: -20%;
+    }
+    
     h4 {
         font-size: 1.25em;
         padding: 0;;
@@ -135,6 +139,10 @@ nav {
     h4 {
         font-size: 1.25em;
         padding: 0;
+    }
+
+    .description {
+        margin-top: -20%;
     }
 }
 
