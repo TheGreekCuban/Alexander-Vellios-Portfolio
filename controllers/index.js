@@ -27,13 +27,13 @@ router.get("*", (request, response) => {
     response.sendFile(path.join(__dirname, "../public/html/aboutme.html"))
 })
 
+//This route is used to post new contact info to the database!
 router.post("/insert", (request, response) => {
-    const person = {
-        name: request.body.name,
-        phone: request.body.phone,
-        email: request.body.email,
-        message: request.body.message
-    }
+   db.Person.create(request.body).then(dbPerson => {
+       console.log(dbPerson)
+   }).catch(error => {
+       response.json(error)
+   })  
 })
 
 module.exports = router
