@@ -29,9 +29,12 @@ router.get("*", (request, response) => {
 
 //This route is used to post new contact info to the database!
 router.post("/api/contact", (request, response) => {
-    console.log(request)
    db.Person.create(request.body).then(dbPerson => {
-       console.log(dbPerson)
+       console.log("Db Person: ", dbPerson)
+       response.json({
+           status: "success OK 200",
+           contact: dbPerson
+       })
    }).catch(error => {
        response.json(error)
    })  

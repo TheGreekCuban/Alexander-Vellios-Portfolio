@@ -37,7 +37,17 @@ const saveMessage = (name, phone, email, message) => {
     body: JSON.stringify(data)
   }
 
-  fetch("/api/contact", options)
+  fetch("/api/contact", options).then(response => {
+    console.log(response)
+  }).then(response => {
+    clearForm()
+  }).catch(error => {
+    console.log(error)
+  })
+}
+
+const clearForm = () => {
+  document.getElementById("cForm").reset();
 }
 
 //Listen for form Submit  
