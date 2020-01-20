@@ -12,12 +12,32 @@ const submitForm = (e) => {
   const email = getInputVal("email")
   const message = getInputVal("textarea")
 
-  console.log(name)
+  saveMessage(name, phone, email, message)
 }
 
 //Function to get form values
 const getInputVal = id => {
   return document.getElementById(id).value;
+}
+
+//Function that saves message to database
+const saveMessage = (name, phone, email, message) => {
+  let data = {
+    name: name,
+    phone: phone,
+    email: email,
+    message: message
+  }
+
+  const options = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  }
+
+  fetch("/api/contact", options)
 }
 
 //Listen for form Submit  
