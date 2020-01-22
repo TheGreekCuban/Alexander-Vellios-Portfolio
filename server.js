@@ -9,11 +9,14 @@ const app = express()
 //Create a variable that willl be the PORT
 const PORT = process.env.PORT || 3030
 
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/contactedme"
+// const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/contactedme"
 // Connect to the Mongo DB
-mongoose.connect(MONGODB_URI, {
-    useNewUrlParser: true
-})
+// mongoose.connect(MONGODB_URI, {
+//     useNewUrlParser: true
+// })
+
+// Connect to the Mongo DB
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/contactedme");
 
 const db = mongoose.connection
   db.on("error", console.error.bind(console, "connection error: "))
