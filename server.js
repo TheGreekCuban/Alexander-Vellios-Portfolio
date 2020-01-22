@@ -19,10 +19,9 @@ const PORT = process.env.PORT || 3030
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/contactedme");
 
 const db = mongoose.connection
-  db.on("error", console.error.bind(console, "connection error: "))
-  db.once("open", function() {
-    console.log("Connected to Mongoose`!")
-})
+
+db.on("error", console.error.bind(console, "connection error: "))
+db.once("open", function() { console.log("Connected to Mongoose`!") })
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
