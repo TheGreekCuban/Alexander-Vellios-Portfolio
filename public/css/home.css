@@ -25,6 +25,27 @@ body {
     font-family: 'Cinzel', serif;
 }
 
+
+#mobile-demo {
+    font-family: 'Cinzel', serif;
+    padding-top: 55%;
+
+}
+
+.sidenav li>a {
+    font-size: 1.5em;
+    padding: 1em .5em;
+}
+
+a {
+    color: white;
+    text-shadow: 3px 3px 10px #107C10;
+}
+
+a:hover {
+    text-shadow: white 1px 1px 25px;
+}
+
 nav {
     background-color: #107C10;
     color: #3A3A3A;

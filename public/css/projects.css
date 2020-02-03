@@ -24,6 +24,27 @@ body {
     font-family: 'Cinzel', serif;
 }
 
+
+#mobile-demo {
+    font-family: 'Cinzel', serif;
+    padding-top: 55%;
+
+}
+
+.sidenav li>a {
+    font-size: 1.5em;
+    padding: 1em .5em;
+}
+
+a {
+    color: white;
+    text-shadow: 3px 3px 10px #107C10;
+}
+
+a:hover {
+    text-shadow: white 1px 1px 25px;
+}
+
 .description {
     display: none;
     grid-area: desc;
@@ -106,7 +127,7 @@ nav {
     }
 
     .description {
-        margin-top: -20%;
+        margin-top: -15%;
     }
     
     h4 {
@@ -146,7 +167,7 @@ nav {
     }
 
     .description {
-        margin-top: -20%;
+        margin-top: -15%;
     }
 }
 
