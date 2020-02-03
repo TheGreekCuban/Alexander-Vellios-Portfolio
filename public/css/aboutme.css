@@ -27,13 +27,23 @@ body {
 
 #mobile-demo {
     font-family: 'Cinzel', serif;
-    padding-top: 55%;
+    padding-top: 10%;
+    background-color:#3A3A3A;
+    border: white solid 2px;
+}
 
+#menuPic {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+    border: white solid 2px;
 }
 
 .sidenav li>a {
     font-size: 1.5em;
-    padding: 1em .5em;
+    padding: 1em .85em;
+    color: white;
 }
 
 a {
