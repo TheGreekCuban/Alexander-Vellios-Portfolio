@@ -137,6 +137,7 @@ nav {
 
     .info {
         font-size: .85em;
+        margin-top: 2.5%;
     }
     
     h3 {
@@ -174,6 +175,7 @@ nav {
     
     .info {
         font-size: .85em;
+        margin-top: 2.5%;
     }
 
     h3 {
@@ -197,12 +199,7 @@ nav {
                                 "footer footer footer footer";
     }
 
-    .info {
-        margin-top: -20%;
-    }
-
     .contactForm {
-        margin-top: -20%;
         padding: 10%;
     }
     .banner {
