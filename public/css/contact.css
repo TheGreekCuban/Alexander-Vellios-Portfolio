@@ -77,8 +77,6 @@ a:hover {
 }
 
 .info {
-    display: flex;
-    flex-direction: column;
     max-height: 100%;
     grid-area: info;
     text-align: center;
@@ -86,7 +84,6 @@ a:hover {
     justify-content: center;
     font-size: 2rem;
     color: white;
-    margin-top: -10%;
     text-shadow: 3px 3px 10px #107C10;
 }
 
@@ -113,13 +110,51 @@ nav {
 
 
 /* iPhones Screens Other Than 6/7/8 */
+@media screen and (max-width: 490px) {
+    body {
+        grid-template-areas:    "nav nav nav nav"
+                                "info info info info"
+                                "form form form form"
+                                "footer footer footer footer";
+        grid-template-rows: repeat(4, minmax(auto, 1fr));
+    }
+
+    #myName {
+        display: none;
+    }
+
+    #contactUs {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .info {
+        font-size: 1.5rem;
+        margin-top: -10%;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+    }
+
+    .contactForm {
+        margin-top: -17.5%;
+        padding: 10%;
+    }
+}
+
+/* iPhones Screens Other Than 6/7/8 */
 @media screen and (max-width: 390px) {
     body {
         grid-template-areas:    "nav nav nav nav"
-                                "banner banner banner banner"
                                 "info info info info"
                                 "form form form form"
                                 "footer footer footer footer";
+        grid-template-rows: repeat(4, minmax(auto, 1fr));
     }
 
     #myName {
@@ -128,7 +163,7 @@ nav {
 
     #contactUs {
         display: block;
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .banner {
@@ -136,8 +171,7 @@ nav {
     }
 
     .info {
-        font-size: .85em;
-        margin-top: 2.5%;
+        font-size: 1.5rem;
     }
     
     h3 {
@@ -150,59 +184,3 @@ nav {
     }
 }
 
-/* iPhones Screens 6/7/8 */
-@media screen and (min-width: 405px) and (max-width: 480px) {
-    body {
-        grid-template-areas:    "nav nav nav nav"
-                                "banner banner banner banner"
-                                "info info info info"
-                                "form form form form"
-                                "footer footer footer footer";
-    }
-
-    #myName {
-        display: none;
-    }
-
-    #contactUs {
-        display: block;
-        font-size: 1.5em;
-    }
-
-    .banner {
-        display: none;
-    }
-    
-    .info {
-        font-size: .85em;
-        margin-top: 2.5%;
-    }
-
-    h3 {
-        font-size: 1.5em;
-    }
-
-    .contactForm {
-        margin-top: -17.5%;
-        padding: 10%;
-    }
-}
-
-/* iPad and iPad Pro */
-@media screen and (min-width: 490px) and (max-width: 1030px) {
-
-    body {
-        grid-template-areas:    "nav nav nav nav"
-                                "banner banner banner banner"
-                                "info info info info"
-                                "form form form form"
-                                "footer footer footer footer";
-    }
-
-    .contactForm {
-        padding: 10%;
-    }
-    .banner {
-        display: none
-    }
-}
