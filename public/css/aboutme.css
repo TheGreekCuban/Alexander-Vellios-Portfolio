@@ -89,6 +89,7 @@ nav {
     color: white;
     grid-area: header;
     margin: 2.5% 5% 0 5%;
+    font-size: 3.5rem;
 }
 
 .aboutMeContent {
@@ -98,25 +99,38 @@ nav {
 
 
 /* iPhones Screens Other Than 6/7/8 */
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 410px) {
     #myPhoto {
-        margin-bottom: 5%;
         padding: 5px 20px 5px 20px;
     }
+
+    #myName {
+        font-size: 1.5rem;
+    }
+
     .aboutMeHeader {
         padding: 0;
-        margin: 5%;
+        font-size: 2rem;
         text-align: center;
         background-color: #3A3A3A;
         color: white;
         text-shadow: 1px 1px #3A3A3A;
     }
+
+    #myPhoto {
+        margin: 0;
+        float: none;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 /* iPhones Screens 6/7/8 */
-@media screen and (min-width: 405px) and (max-width: 480px) {
+@media screen and (max-width: 490px) {
     #myPhoto {
         padding: 5px 30px 5px 30px;
+        margin: 0;
+        float: none;
     }
     .aboutMeHeader {
         padding: 0;
@@ -135,11 +149,7 @@ nav {
         background-color: #3A3A3A;
         color: white;
         text-shadow: 1px 1px #3A3A3A;
-        margin-top: -10%;
-        font-size: 4em;
-    }
-
-    .aboutMeContent {
-        margin-top: -20%;
+        font-size: 3.5rem;
+    
     }
 }
