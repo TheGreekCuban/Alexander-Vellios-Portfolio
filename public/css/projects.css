@@ -125,7 +125,7 @@ nav {
 
 
 /* iPhones Screens Other Than 6/7/8 */
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 405px) {
 
     body {
         grid-template:  "nav nav nav nav"
@@ -136,12 +136,17 @@ nav {
     }
 
     .description {
-        margin-top: -15%;
+        margin-top: -5%;
+        font-size: .8rem;
     }
     
     h4 {
         font-size: 1.25em;
         padding: 0;;
+    }
+
+    .techUsed {
+        font-size: .8rem;
     }
 
     .fa-github {
@@ -156,7 +161,7 @@ nav {
 }
 
 /* iPhones Screens 6/7/8 */
-@media screen and (min-width: 405px) and (max-width: 480px) {
+@media screen and (min-width: 405px) and (max-width: 490px) {
     body {
         grid-template:  "nav nav nav nav"
                         "t1 t1 t1 t1"
@@ -168,15 +173,16 @@ nav {
     h4 {
         font-size: 1.25em;
         padding: 0;
+        margin: 1.5rem 0 0 0;
     }
 
     .gitHub {
         text-align: center;
-        font-size: 2.5em;
+        font-size: 2.5rem;
     }
 
     .description {
-        margin-top: -15%;
+        margin-top: -5%;
     }
 }
 
@@ -184,7 +190,7 @@ nav {
 @media screen and (min-width: 490px) and (max-width: 1030px) {
 
     body {
-         grid-template:  "nav nav nav nav"
+         grid-template: "nav nav nav nav"
                         "t1 t1 t1 t1"
                         "fs fs fs fs"
                         "desc desc desc desc"
@@ -192,22 +198,22 @@ nav {
     }
 
     h4 {
-        font-size: 1.25em;
+        font-size: 2rem;
         padding: 0;;
     }
 
     .description {
-        font-size: 1.5em;
-        margin-top: -10%;
+        font-size: 1rem;
+        margin-top: -5%;
     }
     
     .techUsed {
-        font-size: 1.5em;
+        font-size: 1rem;
     }
     
     .gitHub {
         text-align: center;
-        font-size: 2.5em;
+        font-size: 2.5rem;
         grid-area: git;
     }
 }
