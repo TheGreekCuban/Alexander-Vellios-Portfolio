@@ -231,36 +231,8 @@ and (orientation : landscape) {
         overflow-x: hidden;
     }
 
-    body {
-        font-size: 16px;
-        display: grid;
-        grid-template-areas:    "nav nav nav nav"
-                                "info info form form"
-                                "info info form form"
-                                "footer footer footer footer";
-        grid-template-rows: repeat(4, minmax(auto, 1fr));
-    }
-
-
     .banner {
         display: none;
     }
 
-    .contactForm {
-        grid-area: form;
-    }
-
-    form {
-        margin-bottom: 10%;
-    }
-
-    .info {
-        grid-area: info;
-    }
-
-    #footer,
-    .page-footer {
-        grid-area: footer;
-        margin-top: 10%;
-    }
 }
