@@ -81,7 +81,7 @@ router.post("/api/email", (request, response) => {
 
         transporter.sendMail(mailOptions, (error, info) => {
             if(error) {
-                return console.log(error)
+                response.json(error)
             }
 
             console.log("Message sent: %s", info.messageId);
