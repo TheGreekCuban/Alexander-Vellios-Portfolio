@@ -236,6 +236,7 @@ and (orientation : landscape) {
     .contactForm,
     .info {
         margin: 5% 0;
+        min-height: 100%;
     }
 
     .banner {
