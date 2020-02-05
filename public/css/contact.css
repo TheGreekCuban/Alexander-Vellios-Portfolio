@@ -220,3 +220,33 @@ nav {
         font-size: 1.25rem;
     }
 } 
+
+@media only screen 
+and (min-device-width : 370px) 
+and (max-device-width : 896px) 
+and (orientation : landscape) { 
+
+    html, 
+    body {
+        overflow-x: hidden;
+        min-height: 100%;
+        width: 100%;        
+        grid-template-rows: auto 1fr auto;
+    }
+
+    .contactForm,
+    .info {
+        margin: 5% 0 5% 0;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    #footer {
+        margin-top: auto;
+        grid-area: footer;
+    }
+
+
+}
