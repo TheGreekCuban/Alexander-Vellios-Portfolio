@@ -233,6 +233,11 @@ and (orientation : landscape) {
         width: 100%;
     }
 
+    .contactForm,
+    .info {
+        margin-top: 5%;
+    }
+
     .banner {
         display: none;
     }
