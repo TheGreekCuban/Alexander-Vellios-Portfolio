@@ -134,6 +134,11 @@ nav {
         font-size: 1.5em;
     }
 
+    #footer {
+        position: fixed;
+        margin-bottom: 0;
+    }
+
     .banner {
         display: none;
     }
@@ -229,6 +234,8 @@ and (orientation : landscape) {
     html, 
     body {
         overflow-x: hidden;
+        height: 100%;
+        width: 100%;
     }
 
     .banner {
