@@ -250,6 +250,10 @@ and (orientation : landscape) {
         grid-area: form;
     }
 
+    form {
+        margin-bottom: 10%;
+    }
+
     .info {
         grid-area: info;
     }
@@ -257,6 +261,6 @@ and (orientation : landscape) {
     #footer,
     .page-footer {
         grid-area: footer;
-        margin-top: auto;
+        margin-top: 10%;
     }
 }
