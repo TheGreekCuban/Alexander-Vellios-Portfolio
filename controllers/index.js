@@ -58,12 +58,11 @@ router.post("/api/email", (request, response) => {
         <hr>
         <p>Message: ${request.body.message}</p>        
     `
-    console.log("PW: ", process.env.password)
 
-    async function main() {
+0
         // create reusable transporter object using the default SMTP transport
         let transporter = nodemailer.createTransport({
-            host: "smtp.ethereal.email",
+            host: "smtp.gmail.com",
             port: 587,
             secure: false, // true for 465, false for other ports
             auth: {
@@ -73,22 +72,25 @@ router.post("/api/email", (request, response) => {
         });
 
         // send mail with defined transport object
-        let info = await transporter.sendMail({
+        let mailOptions = {
             from: '"Admin 👻" <av@agavepv.com>', // sender address
             to: "av@agavepv.com", // list of receivers
             subject: "Alex Vellios - Someone is interested in working with you!", // Subject line
             html: output // html body
-        });                
+        };                
 
-        console.log("Message sent: %s", info.messageId);
-        // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+        transporter.sendMail(mailOptions, (error, info) => {
+            if(error) {
+                return console.log(error)
+            }
 
-        // Preview only available when sending through an Ethereal account
-        console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-        // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-    }
+            console.log("Message sent: %s", info.messageId);
+            // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
 
-    main().catch(console.error);
+            // Preview only available when sending through an Ethereal account
+            console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+            // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+        })
 })
 
 
