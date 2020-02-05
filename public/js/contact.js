@@ -38,9 +38,15 @@ const saveMessage = (name, phone, email, message) => {
   }
 
   fetch("/api/contact", options).then(response => {
-    console.log(response)
+      
+    //Once the info is entered, clear the form and then hit another route to send them email. 
+     fetch("/api/email", options).then(response => {
+        console("Email sent! ", response)
+    }).catch(error => {
+      console.log(error)
+    })
   }).then(response => {
-    clearForm()
+      clearForm()
   }).catch(error => {
     console.log(error)
   })
