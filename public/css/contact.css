@@ -230,7 +230,7 @@ and (orientation : landscape) {
     body {
         overflow-x: hidden;
     }
-    
+
     body {
         font-size: 16px;
         display: grid;
@@ -241,18 +241,16 @@ and (orientation : landscape) {
         grid-template-rows: repeat(4, minmax(auto, 1fr));
     }
 
+
     .banner {
         display: none;
     }
 
     .contactForm {
-        margin: 5% 0 5% 0;
-        padding: 0 2.5% 0 0;
         grid-area: form;
     }
 
     .info {
-        padding-top: 20%;
         grid-area: info;
     }
 
