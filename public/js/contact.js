@@ -41,6 +41,13 @@ const saveMessage = (name, phone, email, message) => {
     console.log(response)
   }).then(response => {
     clearForm()
+
+    fetch("/api/email", options).then(response => {
+      console("Email sent! ", response)
+    }).catch(error => {
+      console.log(error)
+    })
+
   }).catch(error => {
     console.log(error)
   })

@@ -1,6 +1,7 @@
 const express = require("express")
 const path = require("path")
 const router = express.Router()
+const nodeMailer = require("nodemailer")
 const db = require("../models")
 
 router.get("/", (request, response) => {
@@ -39,5 +40,11 @@ router.post("/api/contact", (request, response) => {
        response.json(error)
    })  
 })
+
+
+//This route is used to post new contact info to the database!
+router.post("/api/email", (request, response) => {
+        console.log("This route was hit")
+ })
 
 module.exports = router
