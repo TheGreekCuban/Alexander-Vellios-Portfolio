@@ -44,6 +44,18 @@ router.post("/api/contact", (request, response) => {
 
 //This route is used to post new contact info to the database!
 router.post("/api/email", (request, response) => {
+
+    console.log(request.body)
+
+    const output = `
+        <p>You have a new inquiry from Alexandervellios.com</p>
+        <h4>Details:</h4>
+        <hr>
+        <p>Name: ${request.body.name}</p>
+        <p>Phone: ${request.body.phone}</p>    
+        <p>Email: ${request.body.email}</p>    
+        <p>Message: ${request.body.message}</p>        
+    `
         console.log("This route was hit")
  })
 
