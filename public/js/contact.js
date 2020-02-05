@@ -53,6 +53,7 @@ const saveMessage = (name, phone, email, message) => {
 }
 
 const clearForm = () => {
+  alert("Thank you, your message has been sent. I will be in touch with you shortly!")
   document.getElementById("cForm").reset();
 }
 
