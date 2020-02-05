@@ -113,13 +113,14 @@ nav {
 }
 
 /* iPhones Screens Other Than 6/7/8 */
-@media screen and (max-width: 490px) {
+@media screen and (min-width: 390px) and (max-width: 490px) {
     body {
-        grid-template-areas:    "nav nav nav nav"
-                                "info info info info"
-                                "form form form form"
-                                "footer footer footer footer";
+        grid-template-areas:    "nav nav nav"
+                                "info info info"
+                                "form form form"
+                                "footer footer footer";
         grid-template-rows: repeat(4, minmax(auto, 1fr));
+        grid-template-columns: repeat(3, minmax(auto, 1fr));
     }
 
     #myName {
@@ -153,11 +154,12 @@ nav {
 /* iPhones Screens Other Than 6/7/8 */
 @media screen and (max-width: 390px) {
     body {
-        grid-template-areas:    "nav nav nav nav"
-                                "info info info info"
-                                "form form form form"
-                                "footer footer footer footer";
+        grid-template-areas:    "nav nav nav"
+                                "info info info"
+                                "form form form"
+                                "footer footer footer";
         grid-template-rows: repeat(4, minmax(auto, 1fr));
+        grid-template-columns: repeat(3, minmax(auto, 1fr));
     }
 
     #myName {
