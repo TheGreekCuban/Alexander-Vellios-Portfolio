@@ -7,6 +7,10 @@ body, html {
     display: none;
 }
 
+.info {
+    margin-top: -3.5%;
+}
+
 body {
     font-family: 'Cormorant Garamond', serif;
     font-size: 18px;
@@ -108,7 +112,6 @@ nav {
     grid-area: footer;
 }
 
-
 /* iPhones Screens Other Than 6/7/8 */
 @media screen and (max-width: 490px) {
     body {
@@ -184,3 +187,32 @@ nav {
     }
 }
 
+@media screen and (min-width: 890px) and (max-width: 1024px) {
+    .info {
+        margin-top: -3.5%;
+    }
+
+    .contactForm {
+        margin-left: 5%;
+        padding: 0 20px 0 0;
+    }
+} 
+
+@media screen and (min-width: 490px) and (max-width: 890px) {
+    .info {
+        margin-top: -3.5%;
+    }
+
+    .contactForm {
+        margin-left: 15%;
+        padding: 0 20px 0 0;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+} 
