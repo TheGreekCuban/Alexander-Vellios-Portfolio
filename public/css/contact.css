@@ -7,6 +7,10 @@ body, html {
     display: none;
 }
 
+.info {
+    margin-top: -3.5%;
+}
+
 body {
     font-family: 'Cormorant Garamond', serif;
     font-size: 18px;
@@ -207,10 +211,10 @@ nav {
     }
 
     h3 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     p {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 } 
