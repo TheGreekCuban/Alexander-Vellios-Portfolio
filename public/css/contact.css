@@ -115,6 +115,8 @@ nav {
 /* iPhones Screens Other Than 6/7/8 */
 @media screen and (min-width: 390px) and (max-width: 490px) {
     body {
+        height: 100%;
+        display: grid;
         grid-template-areas:    "nav nav nav"
                                 "info info info"
                                 "form form form"
@@ -138,7 +140,6 @@ nav {
 
     .info {
         font-size: 1.5rem;
-        margin-top: -10%;
     }
     
     h3 {
@@ -154,6 +155,8 @@ nav {
 /* iPhones Screens Other Than 6/7/8 */
 @media screen and (max-width: 390px) {
     body {
+        height: 100%;
+        display: grid;
         grid-template-areas:    "nav nav nav"
                                 "info info info"
                                 "form form form"
