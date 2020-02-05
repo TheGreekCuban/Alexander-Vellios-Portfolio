@@ -232,9 +232,8 @@ and (orientation : landscape) {
         min-height: 100%;
         width: 100%;        
         grid-template-rows: auto 1fr auto;
-        grid-template-columns: 100%;
     }
-    
+
     .contactForm,
     .info {
         margin: 5% 0;
