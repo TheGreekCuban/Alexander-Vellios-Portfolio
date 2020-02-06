@@ -40,18 +40,27 @@ const saveMessage = (name, phone, email, message) => {
   fetch("/api/contact", options)
     .then(response => {
       console.log(response.status)
-      clearForm();
+      clearForm(options);
     }).catch(error => {
           console.log(error)
     })
-
-
   
 }
 
-const clearForm = () => {
+const clearForm = (options) => {
+  //This takes the options argument and passes it into activate nodemailer which handles the second fetch.
+  
+  activateNodemailer(options)
   alert("Thank you, your message has been sent. I will be in touch with you shortly!")
   document.getElementById("cForm").reset();
+}
+
+
+const activateNodemailer = options => {
+  //Once the info is entered, clear the form and then hit another route to send them email. 
+  fetch("/api/email", options).then(response => {
+    console.log("mail sent! :D")
+  }).catch(console.error)
 }
 
 //Listen for form Submit  
