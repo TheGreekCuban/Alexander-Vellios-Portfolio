@@ -1,5 +1,3 @@
-import { response } from "express";
-
 $(document).ready(function () {
   $('.sidenav').sidenav();
 });
