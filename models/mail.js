@@ -7,13 +7,9 @@ const Mail = (request) => {
     console.log("Request2: ", request)
 
     const output = `
-        <p>You have a new inquiry from Alexandervellios.com</p>
-        <h4>Details:</h4>
-        <br>
         <p>Name: ${request.name}</p>
         <p>Phone: ${request.phone}</p>    
         <p>Email: ${request.email}</p>
-        <hr>
         <p>Message:
         <br>
         ${request.message}</p>        
@@ -38,7 +34,6 @@ async function main(output) {
         from: '"Admin" <av@agavepv.com>', // sender address
         to: "av@agavepv.com", // list of receivers
         subject: "Alex Vellios - Someone is interested in working with you!", // Subject line
-        text: "Do we need this?",
         html: output // html body
     });
 
