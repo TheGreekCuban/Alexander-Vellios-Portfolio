@@ -42,9 +42,11 @@ router.post("/api/contact", (request, response) => {
 
 //This route is used to take the information and send to our email!
 router.post("/api/email", (request, response) => {
-    db.Mail(request.body)   
+    db.Mail(request.body).then(response => {
+        console.log("Response: ", response)    
+        console.log("Request: ", request) 
 
-    console.log("Request: ", request.body) 
+    }).catch(error => response.json(error))
 })
 
 module.exports = router
