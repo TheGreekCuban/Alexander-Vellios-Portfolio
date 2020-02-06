@@ -1,3 +1,5 @@
+import { response } from "express";
+
 $(document).ready(function () {
   $('.sidenav').sidenav();
 });
@@ -39,15 +41,17 @@ const saveMessage = (name, phone, email, message) => {
 
   fetch("/api/contact", options)
     .then(response => {
-      
-      //Once the info is entered, clear the form and then hit another route to send them email. 
-      fetch("/api/email", options)
-      
+      console.log(response.status)
       clearForm();
-
     }).catch(error => {
           console.log(error)
     })
+
+    //Once the info is entered, clear the form and then hit another route to send them email. 
+    fetch("/api/email", options).then(response => {
+      console.log("Email sent! :D")
+    })
+  
 }
 
 const clearForm = () => {
