@@ -1,11 +1,11 @@
-$(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
+$(document).ready(function () {
+  $('.sidenav').sidenav();
+});
 
 //Submit form function  
 const submitForm = (e) => {
   e.preventDefault();
-  
+
   //Get All Form Values
   const name = getInputVal("first_name")
   const phone = getInputVal("icon_telephone")
@@ -38,15 +38,14 @@ const saveMessage = (name, phone, email, message) => {
   }
 
   fetch("/api/contact", options).then(response => {
-      
+
     //Once the info is entered, clear the form and then hit another route to send them email. 
-    //  fetch("/api/email", options).then(response => {
-    //     console.log("Email sent! ", response)
-    // }).catch(error => {
-    //   console.log(error)
-    // })
-    //Chain another .then and separate clearForm when you bring this code back!!!   
-    clearForm()
+    fetch("/api/email", options)
+      .then(response => {
+        clearForm();
+      }).catch(error => {
+        console.log(error)
+      })
   }).catch(error => {
     console.log(error)
   })
@@ -59,4 +58,3 @@ const clearForm = () => {
 
 //Listen for form Submit  
 document.getElementById("cForm").addEventListener("submit", submitForm);
-

@@ -30,7 +30,6 @@ router.get("*", (request, response) => {
 //This route is used to post new contact info to the database!
 router.post("/api/contact", (request, response) => {
    db.Person.create(request.body).then(dbPerson => {
-       console.log("Db Person: ", dbPerson)
        response.json({
            status: "success OK 200",
            contact: dbPerson
@@ -43,11 +42,9 @@ router.post("/api/contact", (request, response) => {
 
 //This route is used to take the information and send to our email!
 router.post("/api/email", (request, response) => {
-    db.Mail(request.body)
-    response.json({
-        status: "success OK 200"
-    })
-})
+    db.Mail(request.body)   
 
+    console.log("Request: ", request.body) 
+})
 
 module.exports = router
