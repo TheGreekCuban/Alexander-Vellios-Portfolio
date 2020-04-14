@@ -4,19 +4,17 @@ const nodemailer = require("nodemailer")
 
 const Mail = (request) => {
 
-    console.log("Request2: ", request)
+    console.log("Mail backend request: ", request)
 
     const output = `
         <p>Name: ${request.name}</p>
         <p>Phone: ${request.phone}</p>    
         <p>Email: ${request.email}</p>
-        <p>Message:
-        <br>
-        ${request.message}</p>        
+        <p>Message: ${request.message}</p>        
     `
 
     // call the main function which will take care of the nodemailer.
-    main(output).catch(console.error);
+    main(output)
 }
 
 async function main(output) {
