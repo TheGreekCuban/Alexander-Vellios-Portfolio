@@ -1,6 +1,7 @@
 require("dotenv").config();
 const express = require("express")
 const mongoose = require("mongoose")
+const sslRedirect = require(`heroku-ssl-redirect`)
 
 
 //Save the initialization of express to the app variable
@@ -35,6 +36,9 @@ app.use(express.json());
 const routes = require("./controllers/index")
 
 app.use(routes)
+
+// Adds the sslRedirect for https://
+app.use(sslRedirect(['production'], 301))
 
 // Starts the server to begin listening
 app.listen(PORT, function() {
