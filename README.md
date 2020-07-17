@@ -4,5 +4,5 @@
 ##### This application is powered by Node.js, Express.js, Materialize, CSS and HTML.
 ##### Technologies Used In These Projects: 
 ##### Front End: HTML5 | CSS3 | Javascript | JQuery | Bootstrap | Materialize | Handlebars.js | React.js
-##### Back End: Node.js | MySQL | MongoDB | Express.js | Sequelize.js | Firebase
+##### Back End: Node.js | MySQL | MongoDB | Express.js | Sequelize.js
 
